@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:background="#FFE7C9">
+
+    <TextView
+        android:id="@+id/txtTempName"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textSize="10dp"
+        android:text="name"
+        android:textColor="#000"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/txtTempCat"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textSize="10dp"
+        android:textColor="#000"
+        android:text="cat" />
+
+    <TextView
+        android:id="@+id/textTempViewQty"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:textSize="10dp"
+        android:textColor="#000"
+        android:text="qty" />
+
+    <TextView
+        android:id="@+id/txtTempPrice"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:textSize="10dp"
+        android:textColor="#000"
+        android:text="price" />
+
+    <Button
+        android:id="@+id/editeTempbtn"
+        android:layout_width="83dp"
+        android:layout_height="40dp"
+        android:text="Remove"
+        android:layout_marginTop="10dp"
+        android:textSize="8dp"
+        android:layout_marginRight="1dp"
+        android:textAllCaps="false"
+        android:backgroundTint="#F46E64"
+        app:cornerRadius="20dp"
+        />
+
+    <!--    <Button-->
+    <!--        android:id="@+id/deletepbtn"-->
+    <!--        android:layout_width="70dp"-->
+    <!--        android:layout_height="40dp"-->
+    <!--        android:text="delete"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        android:textSize="8dp"-->
+    <!--        android:backgroundTint="#EC675D"-->
+    <!--        app:cornerRadius="20dp"-->
+    <!--        />-->
+</LinearLayout>

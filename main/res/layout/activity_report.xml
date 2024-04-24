@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFE7C9"
+    tools:context=".Report" >
+
+
+    <TextView
+        android:id="@+id/textViewHomeReport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DA7E50"
+        android:gravity="center"
+        android:text="M.sc Chai Wala"
+        android:textSize="40sp"
+        app:fontFamily="@font/bangers"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="1dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="12dp"
+        app:cardUseCompatPadding="true"
+        android:background="#DA7E50"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFE7C9"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ViewProductCardbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="12dp"
+                app:cardUseCompatPadding="true"
+                app:layout_column="0"
+                android:background="#DA7E50"
+                app:layout_row="0"
+                android:layout_gravity="center"
+                >
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:background="#F8A880"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="50dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/report"
+                        tools:ignore="VectorDrawableCompat" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="250sp"
+                        android:layout_height="50sp"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:text="Select Date To View Report"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        android:background="#F8A880"
+
+
+
+                        app:fontFamily="sans-serif-medium" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/FromProductCardbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="12dp"
+            app:cardUseCompatPadding="true"
+            app:layout_column="0"
+            android:background="#DA7E50"
+            app:layout_row="0"
+            android:layout_gravity="center"
+            >
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:background="#F8A880"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="50dp"
+                    android:layout_height="100dp"
+
+                    app:srcCompat="@drawable/ic_baseline_date_range_24"
+                    tools:ignore="VectorDrawableCompat" />
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TO"
+            android:layout_marginLeft="9dp"
+
+            android:textColor="@color/black"
+            android:textSize="30sp"
+
+            />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/FromDateButton"
+            style="?android:spinnerStyle"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:onClick="FromDate"
+            android:text="MM  DD YYYY"
+            android:textColor="@color/black"
+            android:elevation="30dp"
+            app:cornerRadius="20dp"
+            android:backgroundTint="#DA7E50"
+            android:textSize="30sp"
+
+            />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ToProductCardbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="12dp"
+            app:cardUseCompatPadding="true"
+            app:layout_column="0"
+            android:background="#DA7E50"
+            app:layout_row="0"
+            android:layout_gravity="center"
+            >
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:background="#F8A880"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="50dp"
+                    android:layout_height="100dp"
+
+                    app:srcCompat="@drawable/ic_baseline_date_range_24"
+                    tools:ignore="VectorDrawableCompat" />
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FROM"
+                    android:layout_marginLeft="9dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <Button
+            android:id="@+id/ToDateButton"
+            style="?android:spinnerStyle"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:onClick="ToDatebtn"
+            android:text="MM  DD YYYY"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

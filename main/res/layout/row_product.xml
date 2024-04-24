@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:background="#FFE7C9">
+
+    <TextView
+        android:id="@+id/txtpName"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textSize="10dp"
+        android:text="name"
+        android:textColor="#000"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/txtpCat"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:textSize="10dp"
+        android:textColor="#000"
+        android:text="cat"
+        />
+
+    <TextView
+        android:id="@+id/textViewQty"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:textSize="10dp"
+        android:textColor="#000"
+        android:text="qty"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/txtpPrice"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:textSize="10dp"
+        android:textColor="#000"
+        android:text="price"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/editepbtn"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:backgroundTint="#57ED5D"
+        android:text="Edit"
+        android:textAllCaps="false"
+        android:textSize="10dp"
+        app:cornerRadius="20dp"
+        android:layout_marginRight="10dp"
+
+        />
+
+<!--    <Button-->
+<!--        android:id="@+id/deletepbtn"-->
+<!--        android:layout_width="70dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:text="delete"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textSize="8dp"-->
+<!--        android:backgroundTint="#EC675D"-->
+<!--        app:cornerRadius="20dp"-->
+<!--        />-->
+</LinearLayout>
